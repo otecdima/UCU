@@ -1,0 +1,4 @@
+0
+['achy', 'cahoot', 'cahot', 'caph', 'caph', 'capot', 'cathop', 'catty', 'catty', 'chao', 'chap', 'chapt', 'chat', 'chatot', 'chatty', 'chay', 'choaty', 'choop', 'chop', 'chopa', 'chott', 'choya', 'coapt', 'coat', 'coho', 'coop', 'coot', 'coothay', 'copa', 'copt', 'copy', 'coth', 'cothy', 'coto', 'cotta', 'cotty', 'coyo', 'cyath', 'ocht', 'pacht', 'paco', 'pact', 'patch', 'patchy', 'phoca', 'poach', 'poachy', 'pochay', 'poco', 'pooch', 'potch', 'tach', 'tact', 'tatchy', 'toco', 'topcoat', 'yacht']
+['hello', 'jk', 'gjjjd']
+[]
