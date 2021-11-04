@@ -85,3 +85,5 @@ def language_part_gen():
     """
     language = ['noun', 'verb', 'adjective', 'adverb']
     return random.choice(language)
+
+print("vufui")
