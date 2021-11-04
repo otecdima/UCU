@@ -135,3 +135,5 @@ def results():
         result.write(str(bad_words))
         result.write("\n")
         result.close()
+
+print("lll")
