@@ -87,4 +87,3 @@ def language_part_gen():
     return random.choice(language)
 
 print("vufui")
-print("kkkk")
