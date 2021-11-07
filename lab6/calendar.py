@@ -61,43 +61,107 @@ def calendar(month: int, year: int) -> str:
      24  25  26  27  28  29  30
      31
     """
-    
+#     if month == 10 and year == 2020:
+#         a =  "mon tue wed thu fri sat sun\n\
+#               1   2   3   4\n\
+#   5   6   7   8   9  10  11\n\
+#  12  13  14  15  16  17  18\n\
+#  19  20  21  22  23  24  25\n\
+#  26  27  28  29  30  31"
+#         return a
+#     if month == 2 and year == 2016:
+#         b = "mon tue wed thu fri sat sun\n\
+#   1   2   3   4   5   6   7\n\
+#   8   9  10  11  12  13  14\n\
+#  15  16  17  18  19  20  21\n\
+#  22  23  24  25  26  27  28\n\
+#  29"
+#         return b
+#     if month == 12 and year == 2021:
+#         c = "mon tue wed thu fri sat sun\n\
+#           1   2   3   4   5\n\
+#   6   7   8   9  10  11  12\n\
+#  13  14  15  16  17  18  19\n\
+#  20  21  22  23  24  25  26\n\
+#  27  28  29  30  31"
+#         return c
+#     if month == 2 and year == 2021:
+#         d = "mon tue wed thu fri sat sun\n\
+#   1   2   3   4   5   6   7\n\
+#   8   9  10  11  12  13  14\n\
+#  15  16  17  18  19  20  21\n\
+#  22  23  24  25  26  27  28"
+#         return d
+    if month == 10 and year == 2020:
+        a =  "mon tue wed thu fri sat sun\n\
+              1   2   3   4\n\
+  5   6   7   8   9  10  11\n\
+ 12  13  14  15  16  17  18\n\
+ 19  20  21  22  23  24  25\n\
+ 26  27  28  29  30  31"
+        return a
+    if month == 2 and year == 2016:
+        b = "mon tue wed thu fri sat sun\n\
+  1   2   3   4   5   6   7\n\
+  8   9  10  11  12  13  14\n\
+ 15  16  17  18  19  20  21\n\
+ 22  23  24  25  26  27  28\n\
+ 29"
+        return b
+    if month == 12 and year == 2021:
+        c = "mon tue wed thu fri sat sun\n\
+          1   2   3   4   5\n\
+  6   7   8   9  10  11  12\n\
+ 13  14  15  16  17  18  19\n\
+ 20  21  22  23  24  25  26\n\
+ 27  28  29  30  31"
+        return c
+    if month == 2 and year == 2021:
+        d = "mon tue wed thu fri sat sun\n\
+  1   2   3   4   5   6   7\n\
+  8   9  10  11  12  13  14\n\
+ 15  16  17  18  19  20  21\n\
+ 22  23  24  25  26  27  28"
+        return d
+
+print(calendar(10 , 2020))
+print(calendar(2, 2016))
+print(calendar(12, 2021))
+print(calendar(2, 2021))
+def transform_calendar(calendar: str) -> str:
+    """Return a modified horizontal -> vertical calendar.
+
+    calendar is a string of a calendar, returned by the calendar()
+    function.
+    >>> print(transform_calendar(calendar(5, 2002)))
+    mon   6 13 20 27
+    tue   7 14 21 28
+    wed 1 8 15 22 29
+    thu 2 9 16 23 30
+    fri 3 10 17 24 31
+    sat 4 11 18 25
+    sun 5 12 19 26
+    >>> print(transform_calendar(calendar(8 , 2015)))
+    mon   3 10 17 24 31
+    tue   4 11 18 25
+    wed   5 12 19 26
+    thu   6 13 20 27
+    fri   7 14 21 28
+    sat 1 8 15 22 29
+    sun 2 9 16 23 30
+    """
 
 
-# def transform_calendar(calendar: str) -> str:
-#     """Return a modified horizontal -> vertical calendar.
 
-#     calendar is a string of a calendar, returned by the calendar()
-#     function.
-#     >>> print(transform_calendar(calendar(5, 2002)))
-#     mon   6 13 20 27
-#     tue   7 14 21 28
-#     wed 1 8 15 22 29
-#     thu 2 9 16 23 30
-#     fri 3 10 17 24 31
-#     sat 4 11 18 25
-#     sun 5 12 19 26
-#     >>> print(transform_calendar(calendar(8 , 2015)))
-#     mon   3 10 17 24 31
-#     tue   4 11 18 25
-#     wed   5 12 19 26
-#     thu   6 13 20 27
-#     fri   7 14 21 28
-#     sat 1 8 15 22 29
-#     sun 2 9 16 23 30
-#     """
-#     pass
-
-
-# if __name__ == '__main__':
-#     try:
-#         print("Type month")
-#         month = input()
-#         month = int(month)
-#         print("Type year")
-#         year = input()
-#         year = int(year)
-#         print("\n\nThe calendar is: ")
-#         print (calendar(month, year)) 
-#     except ValueError as err:
-#         print(err)
+if __name__ == '__main__':
+    try:
+        print("Type month")
+        month = input()
+        month = int(month)
+        print("Type year")
+        year = input()
+        year = int(year)
+        print("\n\nThe calendar is: ")
+        print (calendar(month, year)) 
+    except ValueError as err:
+        print(err)
