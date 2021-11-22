@@ -20,4 +20,4 @@ def find_intersection(s1, s2):
                 return print(item.lower())
     else:
         return None
-find_intersection ("Zff", "Zbb")
+find_intersection("aaabb", "bbbbccc")

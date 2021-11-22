@@ -8,6 +8,7 @@ def names_read(file_name):
     with open(file_name, "r", encoding = "utf-8") as new_file:
         list_of_names = [string.rstrip() for string in new_file]
     return set(list_of_names)
+# print(names_read('female.txt'), names_read('male.txt'))
 
 def common_names(female_names, male_names):
     '''
@@ -26,4 +27,4 @@ names_read('female.txt'))  #doctest: +ELLIPSIS
             new_list.append(item)
     return set(new_list)
 
-print(common_names(['Mary', 'Gerry'], ['Sam', 'Gerry', 'Joe']))
+print(common_names(names_read('female.txt'), names_read('male.txt')))
